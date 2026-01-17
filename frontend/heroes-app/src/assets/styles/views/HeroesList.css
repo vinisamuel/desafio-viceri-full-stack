@@ -1,0 +1,33 @@
+.heroes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heroes-list .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroes-list .header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.75rem;
+  color: #2c3e50;
+}
+
+.heroes-list .search-bar {
+  max-width: 400px;
+}
+
+.heroes-list .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.heroes-list .w-full {
+  width: 100%;
+}

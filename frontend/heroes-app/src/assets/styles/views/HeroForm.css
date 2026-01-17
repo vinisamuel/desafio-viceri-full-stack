@@ -1,0 +1,67 @@
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-form .header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.75rem;
+  color: #2c3e50;
+}
+
+.hero-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.hero-form .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-form .form-section.full-width {
+  grid-column: 1 / -1;
+}
+
+.hero-form .form-section h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: darkgray;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.hero-form .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-form .form-field label {
+  font-weight: 600;
+  color: gray;
+}
+
+.hero-form .form-field small.p-error {
+  color: #e24c4c;
+  font-size: 0.875rem;
+}
+
+.hero-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
