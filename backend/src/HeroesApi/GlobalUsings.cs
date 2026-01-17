@@ -1,0 +1,14 @@
+global using Microsoft.AspNetCore.Mvc;
+global using HeroesApi.Controllers.Base;
+global using HeroesApi.Data.Contexts;
+global using HeroesApi.Data.Entities;
+global using HeroesApi.Data.Repositories;
+global using HeroesApi.Extensions;
+global using HeroesApi.Models.Heroes;
+global using HeroesApi.Models.Superpowers;
+global using HeroesApi.Services;
+global using HeroesApi.Shared.Extensions;
+global using HeroesApi.Shared.NotificationWrapper;
+global using HeroesApi.Shared.Settings;
+global using Microsoft.EntityFrameworkCore;
+global using Swashbuckle.AspNetCore.Annotations;

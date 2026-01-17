@@ -1,0 +1,17 @@
+global using Bogus;
+global using Bogus.Extensions.Brazil;
+global using HeroesApi.Data.Contexts;
+global using HeroesApi.Data.Entities;
+global using HeroesApi.Data.Repositories;
+global using HeroesApi.Models.Heroes;
+global using HeroesApi.Models.Superpowers;
+global using HeroesApi.Services;
+global using HeroesApi.Services.Implementations;
+global using HeroesApi.Shared.NotificationWrapper;
+global using HeroesApi.Shared.Settings;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Query;
+global using Microsoft.Extensions.Logging;
+global using Moq;
+global using System.Linq.Expressions;
+global using Xunit;

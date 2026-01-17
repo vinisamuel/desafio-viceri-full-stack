@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HeroesApi</name>
+    </assembly>
+    <members>
+        <member name="M:HeroesApi.Controllers.HeroesController.GetAllAsync">
+            <summary>
+            Get all heroes
+            </summary>
+            <returns>List of all heroes</returns>
+        </member>
+        <member name="M:HeroesApi.Controllers.HeroesController.GetByIdAsync(System.Int64)">
+            <summary>
+            Get hero by id
+            </summary>
+            <param name="id">Hero id</param>
+            <returns>Hero details with superpowers</returns>
+        </member>
+        <member name="M:HeroesApi.Controllers.HeroesController.CreateAsync(HeroesApi.Models.Heroes.UpsertHeroModel)">
+            <summary>
+            Create a new hero
+            </summary>
+            <param name="model">Hero data</param>
+            <returns>Created hero with details</returns>
+        </member>
+        <member name="M:HeroesApi.Controllers.HeroesController.UpdateAsync(System.Int64,HeroesApi.Models.Heroes.UpsertHeroModel)">
+            <summary>
+            Update an existing hero
+            </summary>
+            <param name="id">Hero id</param>
+            <param name="model">Updated hero data</param>
+            <returns>Updated hero with details</returns>
+        </member>
+        <member name="M:HeroesApi.Controllers.HeroesController.DeleteByIdAsync(System.Int64)">
+            <summary>
+            Delete a hero
+            </summary>
+            <param name="id">Hero id</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:HeroesApi.Controllers.SuperpowersController.GetAllAsync">
+            <summary>
+            Get all superpowers
+            </summary>
+            <returns>List of all available superpowers</returns>
+        </member>
+        <member name="M:HeroesApi.Extensions.SwaggerExtensions.AddSwaggerDocumentation(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Adiciona a documentação do Swagger na API
+            </summary>
+            <param name="services"></param>
+            <param name="title">Título da documentação</param>
+            <param name="description">Descrição da documentação</param>
+            <param name="version">Versão da documentação. (Padrão: v1)</param>
+            <param name="addBearerToken">Indicador se adiciona a entrada de token</param>
+            <returns></returns>
+        </member>
+        <member name="M:HeroesApi.Extensions.SwaggerExtensions.UseSwaggerDocumentation(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env">Interface para identificação do ambiente de execução</param>
+            <param name="version">Versão da documentação. (Padrão: v1)</param>
+            <returns></returns>
+        </member>
+        <member name="T:HeroesApi.Middlewares.ExceptionHandlerMiddleware">
+            <summary>
+            Classe que para tratamento de exceções não capturadas
+            </summary>
+            <remarks>
+            Cria uma instância <see cref="T:HeroesApi.Middlewares.ExceptionHandlerMiddleware"/>
+            </remarks>
+            <param name="next"></param>
+        </member>
+        <member name="M:HeroesApi.Middlewares.ExceptionHandlerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Classe que para tratamento de exceções não capturadas
+            </summary>
+            <remarks>
+            Cria uma instância <see cref="T:HeroesApi.Middlewares.ExceptionHandlerMiddleware"/>
+            </remarks>
+            <param name="next"></param>
+        </member>
+        <member name="M:HeroesApi.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Método chamado no pipeline da requisição. Caso ocorra uma exceção não tratada, uma mensagem é logada e é retornado erro 500.
+            </summary>
+            <param name="context">contexto da requisição</param>
+        </member>
+    </members>
+</doc>
